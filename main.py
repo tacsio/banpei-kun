@@ -130,14 +130,15 @@ def main():
     index = 0
     print("[{}] Starting Banpei-kun (ばんぺいくんRX)".format(time.ctime()))
     while True:
-        print("[{}] Iteration {}".format(time.ctime(), index))
         index += 1
+        print("[{}] Iteration {}".format(time.ctime(), index))
 
         print(CYELLOW+"[{}] Start Calls".format(time.ctime())+CEND)
         watch_starts()
         print(CYELLOW+"[{}] Stop Calls".format(time.ctime())+CEND)
         watch_stops()
 
+        print("[{}] Iteration {} finished".format(time.ctime(), index))
         time.sleep(60*WATCH_DELAY_MIN)
 
 
