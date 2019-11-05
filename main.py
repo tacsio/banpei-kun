@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8
+
 import requests
 import json
 import time
@@ -82,7 +85,7 @@ def _notify(call, ticket, price):
 
     info = "{} - R$ {}".format(ticket, price)
     subprocess.run(
-        "notify-send '{}' '{}' --icon={}".format(title, info, icon), shell=True)
+        "notify-send -t 30000 '{}' '{}' --icon={}".format(title, info, icon), shell=True)
 
 
 def watch_starts():
