@@ -1,4 +1,6 @@
-# Stock Linux Alert
+# Banpei-kun RX Stock Alert
+
+Notifies you when stock prices reach start or stop values.
 
 # License
 MIT License
